@@ -1,66 +1,24 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '1.Sayfa.dart';
+import 'Lobi.dart';
+import 'acilis_sayfasi.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
 
-  runApp(MaterialApp(home: Sinif1()));
-  debugShowCheckedModeBanner: false;
+    );
+  runApp(Sinif1());
 }
 
-class Sinif1 extends StatelessWidget{
+class Sinif1 extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-    debugShowCheckedModeBanner: false;
-    return Scaffold(
-      
-      
-        backgroundColor: Colors.white, // gövdenin renk ataması
-
-        appBar: AppBar(
-          centerTitle: true, // app bar ortalaması
-          backgroundColor: Colors.red[800], //appbar ın renk ataması
-          title: Text('MOBİL ECZANE'),
-        ), //gövde adı
-
-        body: Center(
-            child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [
-               Text('""-MMY-""'),
-              Image.asset('images/eczaneisareti.jpg'),
-              Container(
-                  color: Colors.blue,
-                  child:  Row(
-                      children:<Widget> [ Icon(Icons.email),Text('mmustafa.yildz01@gmail.com'),
-
-
-
-                      ]
-                  )),
-             RaisedButton(
-            child: Text('Devam etmek için tıklayın'),
-            onPressed:(){
-
-
-              Navigator.push(context, MaterialPageRoute( builder:(context)=> Sinif2()));
-
-            })
-
-            ]),
-        ), //imaj eklediğim yer
-      
-
-
-      );
-
-
-    
-
-
-
-
-
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: giris_animasyon(),
+    );
   }
-
-
 }
 
