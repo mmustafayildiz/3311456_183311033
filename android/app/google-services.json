@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "161478825797",
+    "firebase_url": "https://mobil-eczane-fb6ba-default-rtdb.firebaseio.com",
+    "project_id": "mobil-eczane-fb6ba",
+    "storage_bucket": "mobil-eczane-fb6ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161478825797:android:a9f962f0ff6bda29d7902c",
+        "android_client_info": {
+          "package_name": "asddsa.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOsfnUmNFRwnOxNd1i_NvKuag0Rgtfmrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161478825797:android:f30369419388dac1d7902c",
+        "android_client_info": {
+          "package_name": "com.example.aag1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOsfnUmNFRwnOxNd1i_NvKuag0Rgtfmrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161478825797:android:bf51f625cef15f6ed7902c",
+        "android_client_info": {
+          "package_name": "com.mobileczanexl.flutterapp.mobil_eczane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOsfnUmNFRwnOxNd1i_NvKuag0Rgtfmrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161478825797-hgqhiqc4m1flk7cff1sgqtnoad5vv8k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
