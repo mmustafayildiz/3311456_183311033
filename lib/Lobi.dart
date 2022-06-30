@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobil_eczane/main.dart';
 import 'Eczane_Listesi.dart';
+import 'Lobi2.dart';
 import 'iletisim_sayfasi.dart';
 import 'isimsifre_login.dart';
 
@@ -22,11 +23,11 @@ class Sinif2 extends StatelessWidget{
         body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('images/logo.jpeg'),
-            Text('Bilgilerin ile giriş yapmak için giriş ekranına tıkla.',style: TextStyle(
-            color: Colors.black,
-              fontSize: 18,
-            )),Text('Navigasyonu açmayı unutmayınız!',style: TextStyle(fontWeight: FontWeight.bold,
+            GestureDetector( onLongPress: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) =>
+                Sinif5())),
+                child: Image.asset('images/logo.jpeg'))
+            ,
+            Text('Navigasyonu açmayı unutmayınız!',style: TextStyle(fontWeight: FontWeight.bold,
               color: Colors.red,
               fontSize: 20,
             )),

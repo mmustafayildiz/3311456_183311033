@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobil_eczane/isimsifre_login.dart';
 import 'package:mobil_eczane/uygulama_aciklamasi.dart';
+import 'gelistirici_Sayfasi.dart';
 import 'Hakkimda_Sayfasi.dart';
 import 'GoogleHarita.dart';
 import 'iletisim_sayfasi.dart';
@@ -28,7 +29,11 @@ class Sinif5 extends StatelessWidget{
           color: Colors.red,
           fontSize: 18,
         )),
-        Image.asset('images/logo.jpeg'),
+
+        GestureDetector( onDoubleTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) =>
+            Sinif8())),
+            child: Image.asset('images/logo.jpeg'))
+        ,
         Container(
             color: Colors.blue,
             child:  Row(
@@ -40,7 +45,7 @@ class Sinif5 extends StatelessWidget{
     }),]
             ),),RaisedButton( child: Text('Haritalar Sayfasına git.',style: TextStyle(
           color: Colors.red,
-            fontSize: 12,
+            fontSize: 20,
           ) ), onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) =>
               MapScreen()));

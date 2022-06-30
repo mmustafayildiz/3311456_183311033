@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobil_eczane/main.dart';
 
-import 'harit_yonlendirme.dart';
+import 'Lobi2.dart';
 class aciklama2 extends StatelessWidget{
   @override
   Widget build (BuildContext context){
@@ -31,17 +31,17 @@ class aciklama2 extends StatelessWidget{
         body: Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [ Text('*Bu durumun yaşandığı ilaçlar: \n '
-            '(1)- Roaccutane\n'
-            '(2)- Durogesic\n'
-            '(3)- Fentanil\n'
-            '(4)- Jurnista\n'
-            '(5)- Morfin\n'
-            '(6)- Aldoran\n'
-            '(7)- Actiq\n'
-            '(8)- Ritalin\n'
-            '(9)- Abstral\n'
-            '(10)- Conterga\n'
-            '(11)- Medikinet',style: TextStyle(
+            '(1)- Roaccutane- Merkezi sinir sistemi uyarıcı\n'
+            '(2)- Durogesic- Merkezi sinir sistemi uyarıcı\n'
+            '(3)- Fentani Merkezi sinir sistemi uyarıcı\n'
+            '(4)- Jurnista- Merkezi sinir sistemi uyarıcı\n'
+            '(5)- Morfin- Merkezi sinir sistemi baskılayıcı\n'
+            '(6)- Aldoran- Merkezi sinir sistemi uyarıcı\n'
+            '(7)- Actiq- Merkezi sinir sistemi uyarıcı\n'
+            '(8)- Ritalin- Merkezi sinir sistemi uyarıcı\n'
+            '(9)- Abstral- Merkezi sinir sistemi uyarıcı\n'
+            '(10)- Conterga- Merkezi sinir sistemi uyarıcı\n'
+            '(11)- Medikinet- Merkezi sinir sistemi uyarıcı',style: TextStyle(
           color: Colors.black,
           fontSize: 19,
         )),

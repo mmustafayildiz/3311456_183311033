@@ -15,30 +15,32 @@ class _grafik2State extends State<grafik2> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.tealAccent,
-      appBar: AppBar(backgroundColor:Colors.red,
-        title: Text("İlaç grafiği (Olması gereken)",style: TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Colors.black,
-          fontSize: 18,
-        )),
-          actions: <Widget>[
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text("İlaç grafiği (Olması gereken)",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontSize: 18,
+            )),
+        actions: <Widget>[
           new IconButton(
-          icon:new Icon(Icons.ads_click, color: Colors.blue,size: 40) ,
-      onPressed:(){
-
-        Navigator.push(context, MaterialPageRoute( builder:(context)=> grafik()));
-      },)
-    ],
-
+            icon: new Icon(Icons.ads_click, color: Colors.blue, size: 40),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => grafik()));
+            },
+          )
+        ],
       ),
       body: ListView(
         padding: EdgeInsets.all(20),
         children: [
           SizedBox(height: 20),
-          Text('Ortalama olarak ecza depo ve stoklarında bulunma oranları(%)'),
+          Text(
+              'Ortalama olarak ecza depo ve stoklarında bulunması gereken oranları(%)'),
           Center(
             child: Container(
-
               width: 200,
               height: 200,
               child: PieChart(
@@ -49,94 +51,59 @@ class _grafik2State extends State<grafik2> {
                     sections: [
                       //Ritalin
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.white
-                      ),
+                          value: 1000, title: '%3', color: Colors.white),
 
                       //Abstral
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.yellow
-                      ),
+                          value: 1000, title: '%3', color: Colors.yellow),
 
                       //Actiq
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.orange
-                      ),
+                          value: 1000, title: '%3', color: Colors.orange),
 
                       //Aldolan
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.blue
-                      ),
+                          value: 1000, title: '%3', color: Colors.blue),
 
                       //Fentanil
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.brown
-                      ),
+                          value: 1000, title: '%3', color: Colors.brown),
 
                       //Durogesic
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.red
-                      ),
+                          value: 1000, title: '%3', color: Colors.red),
 
                       //Conterga
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.black
-                      ),
+                          value: 1000, title: '%3', color: Colors.black),
 
                       //Medikinet
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.grey
-                      ),
+                          value: 1000, title: '%3', color: Colors.grey),
 
                       //Morfin
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.purple
-                      ),
+                          value: 1000, title: '%3', color: Colors.purple),
 
                       //Reaccutane
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.pinkAccent
-                      ),
+                          value: 1000, title: '%3', color: Colors.pinkAccent),
 
                       //Diğer İlaçlar
                       PieChartSectionData(
-                          value: 1000,
-                          title: '%3',
-                          color: Colors.blueGrey
-                      ),
+                          value: 1000, title: '%3', color: Colors.blueGrey),
 
                       ///December
                       PieChartSectionData(
                         value: 19000,
                         title: '%67',
                         color: Colors.black12,
-
                       ),
                     ]),
               ),
             ),
           ),
           SizedBox(height: 40),
-
           Row(
             children: [
               Container(
@@ -149,7 +116,6 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -162,20 +128,18 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
                 width: 20,
                 height: 20,
-                color: Colors.orange  ,
+                color: Colors.orange,
               ),
               SizedBox(width: 10),
               Text('Actiq---(%3)')
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -188,7 +152,6 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -201,7 +164,6 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -214,7 +176,6 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -227,7 +188,6 @@ class _grafik2State extends State<grafik2> {
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -284,16 +244,10 @@ class _grafik2State extends State<grafik2> {
                 color: Colors.black12,
               ),
               SizedBox(width: 10),
-              Text('Normal ilaç---(%89)')
+              Text('Normal ilaç(Kırmızı Reçete dışı)---(%89)')
             ],
           ),
-          Text('Sonuçlar:\n'
-              'Depolarda İfade edilen istatislikler ve mevcut stok durumları sonucunda:\n'
-              '7920 adet Kırmızı reçeteli ilaç yapılan usulsüzlüklerle kayıptır.',style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-            fontSize: 12,
-          )),],
+        ],
       ),
     );
   }

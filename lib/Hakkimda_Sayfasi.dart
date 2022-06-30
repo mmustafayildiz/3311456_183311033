@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobil_eczane/main.dart';
+
+import 'Lobi2.dart';
 class Sinif6 extends StatelessWidget{
   @override
   Widget build (BuildContext context){
@@ -10,6 +12,7 @@ class Sinif6 extends StatelessWidget{
         home: Scaffold(
 
         backgroundColor:Colors.white ,
+
 
         body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -27,10 +30,7 @@ class Sinif6 extends StatelessWidget{
 
 
 
-    Navigator.push(context, MaterialPageRoute( builder:(context)=> Sinif1()));RaisedButton( child: Text('Giriş Ekranı İçin Tıkla! ' ), onPressed: (){
-
-      Navigator.push(context, MaterialPageRoute( builder:(context)=> Sinif1()));
-      });
+    Navigator.push(context, MaterialPageRoute( builder:(context)=> Sinif5()));
 
     }),
     // Navigator.push(context, route)

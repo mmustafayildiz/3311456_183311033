@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mobil_eczane/harit_yonlendirme.dart';
+import 'package:mobil_eczane/Lobi2.dart';
 import 'package:mobil_eczane/GoogleHarita.dart';
 import 'package:mobil_eczane/Firebase_islemleri.dart';
 import 'Kayitsayfasi.dart';

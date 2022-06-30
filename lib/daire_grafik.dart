@@ -1,6 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
+import 'Lobi2.dart';
+
 class grafik extends StatefulWidget {
   const grafik({Key? key}) : super(key: key);
 
@@ -12,14 +14,25 @@ class _grafikState extends State<grafik> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-backgroundColor: Colors.tealAccent,
-      appBar: AppBar(backgroundColor:Colors.red,
-        title: Text("İlaç Daire grafiği (Database)",style: TextStyle(
-        fontWeight: FontWeight.bold,
-            color: Colors.black,
-            fontSize: 18,
-        )),
-
+      backgroundColor: Colors.tealAccent,
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text(
+            "İlaç Daire grafiği (Database) \n                               Anasayfaya dön->",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontSize: 16,
+            )),
+        actions: <Widget>[
+          new IconButton(
+            icon: new Icon(Icons.ads_click, color: Colors.blue, size: 40),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Sinif5()));
+            },
+          )
+        ],
       ),
       body: ListView(
         padding: EdgeInsets.all(20),
@@ -28,7 +41,6 @@ backgroundColor: Colors.tealAccent,
           Text('Ortalama olarak ecza depo ve stoklarında bulunma oranları(%)'),
           Center(
             child: Container(
-
               width: 200,
               height: 200,
               child: PieChart(
@@ -39,94 +51,59 @@ backgroundColor: Colors.tealAccent,
                     sections: [
                       //Ritalin
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.white
-                      ),
+                          value: 600, title: '%1', color: Colors.white),
 
                       //Abstral
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.yellow
-                      ),
+                          value: 600, title: '%1', color: Colors.yellow),
 
                       //Actiq
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.orange
-                      ),
+                          value: 600, title: '%1', color: Colors.orange),
 
                       //Aldolan
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.blue
-                      ),
+                          value: 600, title: '%1', color: Colors.blue),
 
                       //Fentanil
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.brown
-                      ),
+                          value: 600, title: '%1', color: Colors.brown),
 
                       //Durogesic
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.red
-                      ),
+                          value: 600, title: '%1', color: Colors.red),
 
                       //Conterga
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.black
-                      ),
+                          value: 600, title: '%1', color: Colors.black),
 
                       //Medikinet
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.grey
-                      ),
+                          value: 600, title: '%1', color: Colors.grey),
 
                       //Morfin
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.purple
-                      ),
+                          value: 600, title: '%1', color: Colors.purple),
 
                       //Reaccutane
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.pinkAccent
-                      ),
+                          value: 600, title: '%1', color: Colors.pinkAccent),
 
                       //Diğer İlaçlar
                       PieChartSectionData(
-                          value: 600,
-                          title: '%1',
-                          color: Colors.blueGrey
-                      ),
+                          value: 600, title: '%1', color: Colors.blueGrey),
 
                       ///December
                       PieChartSectionData(
                         value: 19000,
                         title: '%89',
                         color: Colors.black12,
-
                       ),
                     ]),
               ),
             ),
           ),
           SizedBox(height: 40),
-
           Row(
             children: [
               Container(
@@ -139,7 +116,6 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -152,20 +128,18 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
                 width: 20,
                 height: 20,
-                color: Colors.orange  ,
+                color: Colors.orange,
               ),
               SizedBox(width: 10),
               Text('Actiq---Beklenen->(%3)-->Mevcut->(%1)!')
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -178,7 +152,6 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -191,7 +164,6 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -204,7 +176,6 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -217,7 +188,6 @@ backgroundColor: Colors.tealAccent,
             ],
           ),
           SizedBox(height: 10),
-
           Row(
             children: [
               Container(
@@ -277,13 +247,16 @@ backgroundColor: Colors.tealAccent,
               Text('Normal ilaç-Beklenen->(%67)->Mevcut->(%89)')
             ],
           ),
-        Text('Sonuçlar:\n'
-            'Depolarda İfade edilen istatislikler ve mevcut stok durumları sonucunda:\n'
-            '7920 adet Kırmızı reçeteli ilaç yapılan usulsüzlüklerle kayıptır.',style: TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Colors.black,
-          fontSize: 12,
-        )),],
+          Text(
+              'Sonuçlar:\n'
+              'Depolarda İfade edilen istatislikler ve mevcut stok durumları sonucunda:\n'
+              '7920 adet Kırmızı reçeteli ilaç yapılan usulsüzlüklerle kayıptır.',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                fontSize: 12,
+              )),
+        ],
       ),
     );
   }
